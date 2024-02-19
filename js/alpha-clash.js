@@ -1,4 +1,4 @@
-const allSeats = document.getElementById('allSeats')
+const totalSeats = document.getElementById('totalSeats')
 const seatButton = document.getElementsByClassName('seatButton')
 const appendedSection = document.getElementById('appended-section')
 const apply = document.getElementById('apply')
@@ -92,4 +92,28 @@ apply.addEventListener('click', function () {
 
 function typeCheck() {
     isTyped = true
+}
+
+function nextChanged() {
+    if (isSelected === true && isTyped === true) {
+        visiblePopup.classList.remove('hidden')
+        seatCount = 0
+        setInnerTextWithIdAndValue('selected-seat-count', seatCount)
+        appendedSection.innerHTML = ''
+        updateTotalPrice = 0
+        grandFinal = 0
+        setInnerTextWithIdAndValue('total-price', updateTotalPrice)
+        setInnerTextWithIdAndValue('grand-total', grandFinal)
+        hide.classList.remove('hidden')
+        apply.setAttribute('disabled', true)
+        setValueWithIdAndValue('required', '')
+        isSelected = false
+        isTyped = false
+    } else {
+        alert('Please select atleast 1 seat and must type phone number.')
+    }
+}
+
+function continueHide() {
+    visiblePopup.classList.add('hidden')
 }
