@@ -24,6 +24,10 @@
             font-family: "Raleway", sans-serif;
         }
 
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
+
         .btnBgColorChanged {
             background-color: #1DD100;
         }
@@ -72,6 +76,7 @@
                 </div>
             </div>
         </nav>
+
         <!-- banner section -->
         <div
             class="w-[81.25%] mx-auto bg-[linear-gradient(180.00deg,rgba(3,7,18,0.5),rgba(3,7,18,0)100%),url('images/banner.png')] bg-center bg-no-repeat rounded-[32px] flex flex-col items-center lg:h-[550px] mb-20 lg:mb-[189px]">
@@ -84,7 +89,7 @@
                 prices from different bus companies and booking in advance.</p>
             <button
                 class="btn mt-2 lg:mt-4 bg-[#1DD100] border-none text-[#030712] lg:text-xl font-bold font-raleway"><a
-                    href="#E-paribahan">Buy
+                    href="#provati-porivohon">Buy
                     Tickets</a></button>
         </div>
     </header>
@@ -93,9 +98,9 @@
         <section class="max-w-[1440px] mx-auto mb-[120px]">
             <div class="w-[81.25%] mx-auto text-center flex flex-col items-center">
                 <h2 class="font-raleway text-xl lg:text-[40px] font-bold text-[#030712]">Best offers for you</h2>
-                <!-- coupon container -->
+
                 <div class="my-12 flex flex-col lg:flex-row gap-6">
-                    <!-- left part -->
+                    <!-- card: 1 -->
                     <div
                         class="bg-[#FFBF0F] lg:w-[573px] py-12 lg:py-[52px] pr-[52px] pl-[51px] rounded-3xl relative flex justify-between items-center">
                         <div class="text-left">
@@ -110,7 +115,7 @@
                             <p class="lg:text-xl font-medium text-[rgba(3,7,18,0.4)]">Coupon Code</p>
                         </div>
                     </div>
-                    <!-- right part -->
+                    <!-- card: 2 -->
                     <div
                         class="bg-[#F78C9C] lg:w-[573px] py-12 lg:py-[52px] pr-[38px] pl-[51px] rounded-3xl relative flex justify-between items-center">
                         <div class="text-left">
@@ -133,13 +138,13 @@
             </div>
         </section>
 
-        <!-- Eternity Paribahan -->
-        <section id="E-paribahan"
+        <!-- Provati Paribahan -->
+        <section id="provati-porivohon"
             class="relative max-w-[1440px] pb-[120px] mx-auto rounded-t-[88px] bg-[#F7F8F8] border-t-2 border-[rgb(29,209,0)]">
             <div class="w-[81.25%] mx-auto">
                 <!-- heading part -->
                 <div class="pt-14 lg:pt-[120px] text-center">
-                    <h1 class="font-raleway text-xl lg:text-[40px] font-bold text-[#030712]">E Paribahan</h1>
+                    <h1 class="font-raleway text-xl lg:text-[40px] font-bold text-[#030712]">P Paribahan</h1>
                     <p class="lg:text-lg lg:w-[691px] mx-auto my-6 text-[rgba(3,7,18,0.6)]">You can access information
                         about bus schedules,
                         locations, amenities, and reviews, and make informed decisions about your trip.</p>
@@ -147,26 +152,26 @@
                 <!-- ticket part -->
                 <div
                     class="my-6 bg-[#FFFFFF] relative rounded-3xl py-8 pl-8 pr-[63px] flex flex-col lg:flex-row justify-between items-center">
-                    <!-- ticket left -->
+
                     <div class=" w-[70%]">
-                        <!-- upper part -->
+
                         <div class="flex flex-col lg:flex-row items-start lg:justify-between lg:items-center">
-                            <!-- upper left  -->
+
                             <div class="flex items-center gap-2 lg:gap-[14px]">
                                 <div><img src="images/bus-logo.png" alt=""></div>
                                 <div>
-                                    <h3 class="font-raleway lg:text-[32px] font-bold text-[#030712]">Eternity Paribahan
+                                    <h3 class="font-raleway lg:text-[32px] font-bold text-[#030712]">Provati Paribahan
                                     </h3>
                                     <p class="lg:text-lg text-[rgba(3,7,18,0.6)]">Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
-                            <!-- upper right -->
+
                             <div class="btn bg-[rgba(29,209,0,0.1)] text-[rgb(29,209,0)] lg:text-lg">
                                 <img src="images/seat-green.png" alt="">
                                 <span id="remaining-seat">40</span> Seats left
                             </div>
                         </div>
-                        <!-- lower part -->
+
                         <div
                             class="mt-6 font-raleway font-semibold text-lg bg-[rgb(247,248,248)] rounded-3xl p-4 lg:p-8">
                             <!-- 1 -->
@@ -228,7 +233,7 @@
                             </div>
                         </div>
                         <!-- all seats -->
-                        <div id="totalSeats" class="font-medium flex flex-col gap-6 text-lg text-[rgba(3,7,18,0.5)] mt-6">
+                        <div id="allSeats" class="font-medium flex flex-col gap-6 text-lg text-[rgba(3,7,18,0.5)] mt-6">
                             <!-- seat A  -->
                             <div class="flex gap-[66px] justify-between">
                                 <div class="flex items-center gap-10">
@@ -549,7 +554,6 @@
                             </div>
                         </div>
                         <!-- success popup -->
-                        <!-- <section class=" max-w-[1440px] mx-auto"> -->
                         <div id="success-popup"
                             class="absolute hidden left-[270px] rounded-2xl w-[62%] font-roboto mx-auto bg-white flex flex-col items-center pb-14">
                             <div class="flex flex-col text-center items-center gap-[38px]">
@@ -568,9 +572,10 @@
                                     class="hover:bg-emerald-700 text-xl font-semibold bg-[#27AE60] text-white py-4 rounded-full px-[104px]">Continue</button>
                             </div>
                         </div>
-                        <!-- </section> -->
+
                         <!-- user input section -->
-                        <div class="">
+                        <form class="">
+
                             <div class="mt-4"><label class="font-semibold">Passenger Name*</label><br>
                                 <input class="my-4 py-5 pl-[22px] border rounded-xl w-full" type="text"
                                     placeholder="Enter your name">
@@ -588,17 +593,19 @@
                             </div>
 
                             <div class="mb-6 mt-2">
-                                <button id="next" class="w-full btn bg-[#1DD100] font-extrabold text-xl text-white"><a
-                                        href="#success-popup">Next</a></button>
+                                <button id="next" onclick="nextChanged()"
+                                    class="w-full btn bg-[#1DD100] font-extrabold text-xl text-white p-0"><a
+                                        class="w-full h-full py-2" href="#success-popup">Next</a></button>
                             </div>
 
                             <div class="flex justify-evenly text-[rgba(3,7,18,0.6)]">
                                 <a class="link" href="">Terms and Conditions</a>
                                 <a class="link" href="">Cancellation Policy</a>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>

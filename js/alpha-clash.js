@@ -1,4 +1,4 @@
-const totalSeats = document.getElementById('totalSeats')
+const allSeats = document.getElementById('allSeats')
 const seatButton = document.getElementsByClassName('seatButton')
 const appendedSection = document.getElementById('appended-section')
 const apply = document.getElementById('apply')
