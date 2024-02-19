@@ -4,3 +4,10 @@ function getInnerTextValueFromId(elementId) {
     const elementValue = parseInt(element.innerText)
     return elementValue
 }
+
+/* get inner text from id */
+function getInnerTextFromId(elementId) {
+    const element = document.getElementById(elementId)
+    const elementText = element.innerText
+    return elementText
+}
