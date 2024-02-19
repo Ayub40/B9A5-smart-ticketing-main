@@ -62,3 +62,34 @@ for (const seat of seatButton) {
     })
 }
 
+const hide = document.getElementById('hide-hobe')
+
+apply.addEventListener('click', function () {
+    const new15Coupon = getInnerTextFromId('new15')
+    const couple20Coupon = getInnerTextFromId('couple20')
+    const couponInputValue = getInputValueFromId('input-coupon')
+
+    if (couponInputValue === new15Coupon) {
+        const grandTotal15 = updateTotalPrice * 0.15
+        const grandFinal = updateTotalPrice - grandTotal15
+        setInnerTextWithIdAndValue('grand-total', grandFinal)
+        hide.classList.add('hidden')
+        setValueWithIdAndValue('input-coupon', '')
+        apply.setAttribute('disabled', true)
+    }
+    else if (couponInputValue === couple20Coupon) {
+        const grandTotal20 = updateTotalPrice * 0.2
+        const grandFinal = updateTotalPrice - grandTotal20
+        setInnerTextWithIdAndValue('grand-total', grandFinal)
+        hide.classList.add('hidden')
+        setValueWithIdAndValue('input-coupon', '')
+        apply.setAttribute('disabled', true)
+    }
+    else {
+        alert("Your coupon code isn't correct")
+    }
+})
+
+function typeCheck() {
+    isTyped = true
+}
