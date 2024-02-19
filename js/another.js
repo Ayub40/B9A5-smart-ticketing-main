@@ -11,3 +11,14 @@ function getInnerTextFromId(elementId) {
     const elementText = element.innerText
     return elementText
 }
+
+
+/* set inner text on element id with value */
+function setInnerTextWithIdAndValue(elementId, value) {
+    const element = document.getElementById(elementId)
+    element.innerText = value
+}
+function setValueWithIdAndValue(elementId, valueNew) {
+    const element = document.getElementById(elementId)
+    element.value = valueNew
+}
